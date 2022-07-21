@@ -1,0 +1,54 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ouraim.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo" href="index.html">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Our Aim</a></li>
+                   
+                    <li><a href="Survey.html">The Survey</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+    <div class="row">
+        <div class="col-1">
+            <h2>Multiple Intelligence<br /> by class 9</h2>
+            <h3>What is Multiple intelligence?</h3>
+            <p>
+                Multiple intelligences is a theory first posited by Harvard developmental psychologist Howard Gardner in 1983 that suggests human intelligence can be differentiated into eight modalities: visual-spatial, verbal-linguistic, musical-rhythmic, logical-mathematical, interpersonal, intrapersonal, naturalistic and bodily-kinesthetic. In contrast to other notions of learning capabilities (for example, the concept of a single IQ), the idea behind the theory of multiple intelligences is that people learn in a variety of different ways.
+            </p>
+            <h4>The Survey</h4>
+            <div class="btn"><button onclick="window.location.href = 'Survey.html';" type="button">Survey<img src="arrow.png" /></button></div>
+
+        </div>
+        <div class="col-2"></div>
+    </div>
+    
+</body>
+</html>
